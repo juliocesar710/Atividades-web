@@ -1,0 +1,42 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+
+body{
+    background-color: #b5cc6a;
+}
+
+header{
+    background-color: #c0de5d;
+    text-align: center;
+}
+
+main{
+    height: 400px;
+    margin: 15px;
+}
+
+footer{
+    background-color: #99a66d;
+    text-align: center;
+    
+}
+
+.paragrafo{
+    display: inline;
+    color: aliceblue;
+    background-color: #6da67a;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 16px;
+}
+
+.cabecalho{
+    padding: 1px;
+}
+.rodape{
+    padding: 1px;
+}
+
