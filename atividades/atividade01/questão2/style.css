@@ -27,8 +27,13 @@ body{
     margin: 5vw;
     background-color: #b1fcb3;
     color: crimson;
-    border: 2px double black;
+    border: 2px double black;   
     box-shadow: 1px 1px 1px black;
+}
+
+.lista{
+    background-color: #4e755c;
+    border: 2px solid black;
 }
 
 .box:hover{
