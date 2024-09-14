@@ -1,0 +1,52 @@
+body{
+    background-color: beige;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+
+  border: 20px solid yellowgreen;
+  background-color: antiquewhite;
+}
+
+.title{
+    font-size: 36px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.campoText{
+    width: 20%;
+    height: 50px;
+    padding-left: 5px;
+    border-radius: 24px;
+    margin-bottom: 10px;
+}
+
+.botao{
+    width: 15%;
+    height: 50px;
+    border-radius: 12px;
+    font-size: 32px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    margin-bottom: 50px;
+}
+
+h2{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 32px;
+    font-weight: bolder;
+}
+
+.infos{
+    margin-left: -400px;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+    
+
+
