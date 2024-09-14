@@ -29,7 +29,7 @@
 </body>
 
 <script>
-    document.querySelector('.botao').addEventListener('click', ()=>{
+    document.querySelector('.botao').addEventListener('click', async ()=>{
         const cepInput = document.querySelector('.campoText');
         const cep = cepInput.value;
 
@@ -40,7 +40,7 @@
             return; 
         }
 
-        fetch(`https://viacep.com.br/ws/${cep}/json/`)
+       await fetch(`https://viacep.com.br/ws/${cep}/json/`)
             .then(response => response.json())
             .then(data => {
                 if (!data.erro) {
