@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta Cep</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="card">
+
+            <h1 class="title">Consulta de Cep</h1>
+            <input class="campoText" type="text" placeholder="digite seu cep">
+            <button class="botao">consultar cep</button>
+            <h2>Resultado</h2>
+            <div class="infos">
+                <p>logradouro: </p>
+                <p>bairro: </p>
+                <p>cidade: </p>
+                <p>estado: </p>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+<script>
+    document.querySelector('.botao').addEventListener('click', ()=>{
+        const cepInput = document.querySelector('.campoText');
+        const cep = cepInput.value;
+
+        
+        if (cep.length !== 8 || isNaN(cep)) {
+            alert("Por favor, insira um CEP válido com 8 números.");
+            cepInput.value = '';
+            return; 
+        }
+
+        fetch(`https://viacep.com.br/ws/${cep}/json/`)
+            .then(response => response.json())
+            .then(data => {
+                if (!data.erro) {
+                    document.querySelector('.infos').innerHTML = `
+                        <p>logradouro: ${data.logradouro}</p>
+                        <p>bairro: ${data.bairro}</p>
+                        <p>cidade: ${data.localidade}</p>
+                        <p>estado: ${data.uf}</p>
+                    `;
+                } else  alert("CEP não encontrado!");
+                   
+                
+            })
+            .catch(error => {
+                alert("Erro ao consultar o CEP!"+error);
+            })
+            .finally(() => {
+                cepInput.value = '';
+            });
+    });
+</script>
+
+
+</html>
