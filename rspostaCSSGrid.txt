@@ -1,0 +1,2 @@
+Usa-se o CSS Grid para definir o template de uma página, para que os elemtnos dentro dele se adequem a seu tamanho, basicamente para uma estrutura mais geral da página o CSS Grid é mais recomendado.
+Exemplo de onde seria mais utilizado seria em organizações como o header, main e footer de uma página web.

@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 
-// Middleware para interpretar JSON
+
 app.use(express.json());
 
 const animes = [
@@ -13,7 +13,6 @@ const animes = [
     }
 ];
 
-// Rota para criar um anime
 app.post('/animes', (req, res) => {
     const { name, genre, studio } = req.body;
 
@@ -32,12 +31,12 @@ app.post('/animes', (req, res) => {
     res.status(201).json(newAnime);
 });
 
-// Rota para listar todos os animes
+
 app.get('/animes', (req, res) => {
     res.json(animes);
 });
 
-// Rota para listar um anime por ID
+
 app.get('/animes/:id', (req, res) => {
     const { id } = req.params;
     const anime = animes.find(a => a.id === parseInt(id));
@@ -49,7 +48,7 @@ app.get('/animes/:id', (req, res) => {
     res.json(anime);
 });
 
-// Rota para atualizar um anime por ID
+
 app.put('/animes/:id', (req, res) => {
     const { id } = req.params;
     const { name, genre, studio } = req.body;
@@ -71,7 +70,7 @@ app.put('/animes/:id', (req, res) => {
     res.json(anime);
 });
 
-// Rota para deletar um anime por ID
+
 app.delete('/animes/:id', (req, res) => {
     const { id } = req.params;
     const index = animes.findIndex(a => a.id === parseInt(id));
