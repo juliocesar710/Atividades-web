@@ -4,7 +4,6 @@
 # 🌐 Atividades-web
 
 ![](https://media.geeksforgeeks.org/wp-content/uploads/20231205165904/web-development-image.webp) 
-📂 **Repositório para as atividades práticas da disciplina de Programação WEB do curso de Ciências da Computação.**  
 
 ---
 
@@ -12,6 +11,8 @@
 Este repositório contém diversas atividades realizadas durante a disciplina, organizadas em pastas específicas. Cada atividade explora temas práticos e conceitos importantes de desenvolvimento web.  
 
 ---
+
+📂 **Repositório para as atividades práticas da disciplina de Programação WEB do curso de Ciências da Computação.**
 
 ## 📁 Estrutura do Repositório  
 
