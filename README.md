@@ -1,4 +1,4 @@
-Aqui está uma versão melhorada e mais elegante da documentação com emotes, ícones, badges e espaço para imagens:  
+
 
 
 # 🌐 Atividades-web
